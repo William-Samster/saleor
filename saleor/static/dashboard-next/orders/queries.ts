@@ -192,6 +192,7 @@ export const orderDetailsQuery = gql`
         code
         country
       }
+      defaultWeightUnit
     }
   }
 `;

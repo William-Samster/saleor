@@ -94,6 +94,7 @@ function loadStories() {
   require("./stories/vouchers/VoucherListPage");
 
   // Product types
+  require("./stories/productTypes/ProductTypeCreatePage");
   require("./stories/productTypes/ProductTypeListPage");
   require("./stories/productTypes/ProductTypeDetailsPage");
 }
