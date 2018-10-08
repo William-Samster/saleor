@@ -12,6 +12,7 @@ import Navigation from "../icons/Navigation";
 import Pages from "../icons/Pages";
 import StoreMall from "../icons/StoreMall";
 import { productTypeListUrl } from "../productTypes";
+import { siteSettingsUrl } from "../siteSettings";
 import { staffListUrl } from "../staff";
 import ConfigurationPage, { MenuItem } from "./ConfigurationPage";
 
@@ -58,7 +59,8 @@ export const configurationMenu: MenuItem[] = [
     description: i18n.t("View and update your site settings"),
     icon: <StoreMall fontSize="inherit" />,
     permission: "site.manage_settings",
-    title: i18n.t("Site Settings")
+    title: i18n.t("Site Settings"),
+    url: siteSettingsUrl
   },
   {
     description: i18n.t("Manage and add additional pages"),

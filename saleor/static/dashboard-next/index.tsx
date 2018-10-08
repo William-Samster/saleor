@@ -28,6 +28,7 @@ import OrdersSection from "./orders";
 import PageSection from "./pages";
 import ProductSection from "./products";
 import ProductTypesSection from "./productTypes";
+import SiteSettingsSection from "./siteSettings";
 import StaffSection from "./staff";
 import theme from "./theme";
 
@@ -117,6 +118,11 @@ render(
                         permissions={["product.manage_products"]}
                         path="/productTypes"
                         component={ProductTypesSection}
+                      />
+                      <SectionRoute
+                        permissions={["site.manage_settings"]}
+                        path="/siteSettings"
+                        component={SiteSettingsSection}
                       />
                       <SectionRoute
                         permissions={["account.manage_staff"]}
